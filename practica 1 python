@@ -1,0 +1,50 @@
+edad=int(input('ingrese la edad'))
+
+if edad>=18:
+     print('la persona puede votar')
+else:
+     print('la persona es menor de edad y no puede votar')
+     
+     
+     calificacion=int(input('ingrese porfavor una nota de 0 a 100'))
+     
+     
+     if calificacion>85:
+          print('la calificacion del alumno es A')
+     elif calificacion>60 & calificacion>84:
+          print('la calificacion del alumno es B')
+     else:
+          print('la calificaion del alumno es D')
+          
+          
+          
+     comida=input('porfavor ingrese el tipo de comida que rte gusta')
+     
+     
+     if comida=='taliana':
+          print('te recomiendo el restaurante pizzarato')
+     elif comida=='mexicana':
+          print('te recomiendo el resturante mexico mio')
+     else :
+          print('te recomiendo el resturante la casa china')
+          
+          
+          
+          
+          contraseña=input('ingrese la contraseña')
+          acesso='exitosa'
+          if contraseña==acceso:
+               print('contraseña exitosa')
+          else:
+               print('la contraseña es incorrecta')
+               
+               
+               
+               palabra=input('porfavor ingresa una palabra')
+               
+               if str(palabra) ==str(palabra)[::-1]:
+                    print('la palabra es palindromo')
+               else:
+                    print('la palabra no es palindromo')
+               
+               
