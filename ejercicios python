@@ -1,0 +1,62 @@
+
+#numero par,positivo o neutro
+num=int(input('por favor ingrese un numero'))
+
+if num>0:
+    print('escribir el numero ',num,'es positivo')
+elif num<0:
+    print('el numero ',num,' es negativo')
+elif num==0:
+    print('el numero ',num,' cero ')
+    
+
+
+
+#año bisiesto
+
+num=int(input('ingrese un año paara saber si es bisiesto '))
+
+
+if num%4==0:
+    print('el año ',num,'es bisiesto')
+else:
+    print('el año ',num,' no es bisiesto')
+    
+
+
+
+#impuesto
+
+ingreso=int(input('por favor ingrese el valor '))
+
+if ingreso>50000:
+    print('el impuesto sobre ',ingreso,' es de 12% y debera pagar',ingreso*0.12)
+elif ingreso>30000 & ingreso<50000:
+    print('su impuesto sobre ',ingreso,' es del 8% y deberea pagar ',ingreso*0.08)
+else:
+    print('su impueso sobre ',ingreso,' es del 5% y debera pagar ',ingreso*0.05)
+    
+    
+# palindromo
+palabra=input('ingrese una palabra ')
+
+if palabra==palabra[::-1]:
+    print(palabra,'es palindromo')
+else:
+    print(palabra,' no es palindromo')
+
+
+#calificaciones
+
+cali=int(input('ingrese la nota del estudiante '))
+
+
+if cali<30:
+    print('su calififcaion es C')
+elif cali>30 & cali<40:
+    print('su calificacion es B')
+elif cali>40 & cali<50:
+    print('su calificaion es A')
+else:
+    print('la calificacion no corresponde a una letra valida')
+
