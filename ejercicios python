@@ -60,3 +60,78 @@ elif cali>40 & cali<50:
 else:
     print('la calificacion no corresponde a una letra valida')
 
+
+
+
+#calculadora imc
+
+altura=float(input('por favor ingrese su altura en metros '))
+peso=int(input('por favor ingrese su peso en kg '))
+imc=peso/(altura**2)
+
+
+if imc<18:
+    print('su peso esta por debajo de lo normal su imc es ',str(imc))
+elif imc>=18 and imc<=25.9:
+    print('su peso es el adecuado su imc es ',str(imc))
+elif imc>=25 and imc<=29.9:
+    print('cuidado esta en sobrepeso su imc es ',str(imc))
+elif imc>30:
+    print('usted tiene obesidad su imc es ',str(imc))
+
+
+#numero primo
+
+def es_primo(numero):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero**0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
+
+numero_a_verificar =int(input('porfavor ingrese un numero '))
+
+if es_primo(numero_a_verificar):
+    print(f"{numero_a_verificar} es un número primo.")
+else:
+    print(f"{numero_a_verificar} no es un número primo.")
+
+
+#edad_perros
+
+edadP=int(input('ingrese la edad del perro en años '))
+
+total=edadP*7
+print('l edad del perro equivalente a la humana es ',total,' años')
+
+
+
+# conversor de temperatura
+
+opcion=int(input('''1.convertir celsius a fahrenheit
+                    2. convertir fahrenheit a celsius
+                    por favor ingrese la accion que desea hacer: '''))
+
+if opcion==1:
+    temperatura=int(input('por favor ingrese la temperatura que desea convertir a fahrenheit '))
+    conversion=(temperatura*1.8)+32
+    print('su temperatura en grados fahrenheit ',conversion)
+if opcion==2:
+    temperatura=int(input('por favor ingrese la temperatura que desea convertir a celsius '))
+    conversion=(temperatura-32)*1.8
+    print('su temperatura en grados celsius ',conversion)
+elif opcion>=3:
+      print('por favor ingrese una opcion valida ')
+
+
+
+#verificacion contraseña
+import re
+contraseña=input('ingrese una contraseña:')
+
+if re.search('[A-Z]',contraseña) and re.search('[a-z]',contraseña) and re.search('[0-9]',contraseña) and len(contraseña)>=8:
+   print(' contraseña cumple con los criterios ')
+else:
+   print('la contraseña no cumple con los criterios ')
